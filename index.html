@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE MAX PUBG</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000, #1a0000, #000);
+    color: #fff;
+}
+
+/* ===== ANIMATSIYA ===== */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes redGlow {
+    0% { box-shadow: 0 0 10px rgba(255,0,0,0.3); }
+    50% { box-shadow: 0 0 30px rgba(255,0,0,0.8); }
+    100% { box-shadow: 0 0 10px rgba(255,0,0,0.3); }
+}
+
+/* ===== WRAPPER ===== */
+.wrapper {
+    display: flex;
+    gap: 30px;
+    min-height: 100vh;
+    padding: 20px;
+    animation: fadeUp 1.2s ease;
+}
+
+/* ===== LOGO ===== */
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 20px;
+    animation: redGlow 4s infinite;
+}
+
+.logo h2 {
+    margin-top: 15px;
+    color: #ff2a2a;
+}
+
+/* ===== ROSTER ===== */
+.roster {
+    flex: 1;
+    background: rgba(255,0,0,0.08);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255,0,0,0.5);
+    animation: redGlow 4s infinite;
+}
+
+.roster h3 {
+    color: #ff2a2a;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.player {
+    background: #0b0b0b;
+    padding: 14px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,0,0,0.4);
+}
+
+/* ===== GAME ===== */
+.game {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game h2 {
+    color: #ff2a2a;
+}
+
+/* ===== RIGHT CARD ===== */
+.right-card {
+    flex: 1;
+    background: #0b0b0b;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(255,0,0,0.4);
+}
+
+.right-card h1 {
+    color: #ff2a2a;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 16px;
+    background: linear-gradient(135deg, #ff0000, #a00000);
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    animation: redGlow 3s infinite;
+}
+
+.link {
+    margin-top: 10px;
+    color: #ff2a2a;
+    font-weight: bold;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo img {
+        max-width: 160px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="logo">
+        <img src="./photo_2025-09-26_01-30-27.jpg" alt="THE MAX">
+        <h2>THE MAX</h2>
+    </div>
+
+    <div class="roster">
+        <h3>👥 ROSTER</h3>
+        <div class="player">THE NICHE<br><small>Captain</small></div>
+        <div class="player">THE KNOWN<br><small>Cover</small></div>
+        <div class="player">THE REMPAGE<br><small>Fragger</small></div>
+        <div class="player">THE MIDONE<br><small>Fragger</small></div>
+    </div>
+
+    <div class="right-card">
+        <h1>THE MAX PUBG</h1>
+        <p>🏆 Turnir Rezultati</p>
+
+    <a class="btn" href="https://t.me/themax_pubg" target="_blank">
+            📢 rezultat Kanalga o‘tish
+             <a class="btn" href="https://t.me/NICHEesport" target="_blank">
+            📢 kapitani highlights kanali
+         <a class="btn" href="https://t.me/AGRESSOR721" target="_blank">
+            📢 Fragerni highlights kanali
+        <a class="btn" href="https://t.me/rempagesports" target="_blank">
+            📢 Fragerni highlights kanali
+              <a class="btn" href="https://t.me/JUST_EDITn1" target="_blank">
+            📢 kamandamiz editorini kanali
+        </a>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
